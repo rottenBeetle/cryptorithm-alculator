@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<?import javafx.scene.control.ProgressIndicator?>
+<VBox fx:id="vBox" prefHeight="401.0" prefWidth="289.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rottenbeetle.numericalrebusform.HelloController">
+    <children>
+        <AnchorPane fx:id="anchorePane1" maxHeight="-1.0" maxWidth="-1.0" prefHeight="401.0" prefWidth="261.0" style="-fx-background-color: #333;" VBox.vgrow="ALWAYS">
+            <children>
+                <TextField fx:id="inputField" layoutX="53.0" layoutY="93.0" prefHeight="25.0" prefWidth="183.0" promptText="Введите ребус на сложение" style="-fx-background-color: #333; -fx-border-color: white; -fx-border-radius: 7px; -fx-border-width: 1.5px; -fx-text-inner-color: white;" />
+                <AnchorPane fx:id="anchorePane2" layoutY="-5.0" prefHeight="65.0" prefWidth="290.0" style="-fx-background-color: black;">
+                    <children>
+                        <Text fx:id="label1" fill="WHITE" layoutX="32.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="КАЛЬКУЛЯТОР РЕБУСОВ">
+                            <font>
+                                <Font name="Impact" size="24.0" />
+                            </font>
+                        </Text>
+                    </children>
+                </AnchorPane>
+                <Button fx:id="executeButton" layoutX="92.0" layoutY="172.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="106.0" text="РЕШИТЬ">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Button>
+                <Text fx:id="label2" fill="WHITE" layoutX="59.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(например, SEND+MORE=MONEY)">
+                    <font>
+                        <Font size="11.0" />
+                    </font>
+                </Text>
+                <TextField fx:id="outputField" editable="false" layoutX="53.0" layoutY="253.0" prefHeight="25.0" prefWidth="183.0" style="-fx-background-color: #333; -fx-border-color: white; -fx-border-radius: 7px; -fx-border-width: 1.5px; -fx-text-inner-color: white;" />
+                <Text fx:id="label3" fill="WHITE" layoutX="56.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Вывод:">
+                    <font>
+                        <Font name="Impact" size="11.0" />
+                    </font>
+                </Text>
+                <Text fx:id="label4" fill="WHITE" layoutX="60.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ввод:">
+                    <font>
+                        <Font name="Impact" size="11.0" />
+                    </font>
+                </Text>
+                <Text fx:id="label5" fill="WHITE" layoutX="108.0" layoutY="391.0" strokeType="OUTSIDE" strokeWidth="0.0" text="by Sergey Shitov">
+                    <font>
+                        <Font size="10.0" />
+                    </font>
+                </Text>
+                <Button fx:id="exitButton" layoutX="108.0" layoutY="342.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="74.0" text="ВЫХОД">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Button>
+
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>
